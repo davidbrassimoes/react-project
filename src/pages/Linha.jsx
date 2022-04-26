@@ -11,15 +11,8 @@ import Loading from '../components/layout/Loading'
 export default function Linha() {
 
     let params = useParams()
-    console.log(params)
     const { l } = params
 
-    // const { data, isLoading } = useFetch(`/infoIntervalos/${l}/s`)
-
-
-    // if (isLoading) {
-    //     return <Loading />
-    // }
 
     return (
         <>

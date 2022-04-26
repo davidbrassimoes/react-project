@@ -23,8 +23,6 @@ export default function Estacoes() {
 
     if (data) {
 
-        const { linha, stop_id, stop_lat, stop_lon, stop_name } = data.resposta
-
         const handleAdd = (event) => {
             dispatch({
                 type: "ADD_FAVORITE",

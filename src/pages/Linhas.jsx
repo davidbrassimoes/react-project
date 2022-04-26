@@ -7,8 +7,12 @@ import { useFetch } from '../hooks/useFetch'
 export default function Linhas() {
     const { data, isLoading } = useFetch('/estadoLinha/todos')
 
-    if (isLoading) {
+    if (isLoading || (data == undefined)) {
         return <Loading />
+    }
+
+    if (data.resposta == "Circulação encerrada") {
+        return <Typography variant="h5">Circulação encerrada</Typography>
     }
 
     if (data) {

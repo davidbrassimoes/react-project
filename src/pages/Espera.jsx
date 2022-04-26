@@ -11,9 +11,15 @@ export default function Espera() {
     const { data, isLoading } = useFetch(`tempoEspera/Estacao/${params.stop_id}`)
 
 
-    if (isLoading) {
+    if (isLoading || (data == undefined)) {
         return <Loading />
     }
+
+
+    if (data.resposta == "Circulação encerrada") {
+        return <Typography>Circulação encerrada</Typography>
+    }
+
 
     if (data) {
 

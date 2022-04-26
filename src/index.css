@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.azul {
+    background-color: #3e72bc !important;
+    color: white !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.amarela {
+    background-color: #f5ab00 !important;
+    color: white !important;
 }
+
+.verde {
+    background-color: #009f93 !important;
+    color: white !important;
+}
+
+.vermelha {
+    background-color: #df1263 !important;
+    color: white !important;
+}
+
+.favorite {
+    fill: white !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* img.lealfet-marker-icon {
+    content: url(https://unpkg.com/browse/leaflet@1.8.0/dist/images/marker-icon.png) !important;
+} */

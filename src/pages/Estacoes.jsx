@@ -42,7 +42,7 @@ export default function Estacoes() {
             <>
                 {data.resposta.map(stop => (
                     <Box stop_id={stop.stop_id} sx={{ minWidth: 275 }} key={stop.stop_id}>
-                        <Card className={stop.linha.toLowerCase().substring(1, stop.linha.length - 1)} variant="outlined">
+                        <Card className={stop.linha.toLowerCase().substring(1, stop.linha.length - 1).replace(",", "")} variant="outlined">
                             <React.Fragment>
                                 <Link id={stop.stop_id} to={`/${stop.stop_id}`}>
                                     <CardContent>

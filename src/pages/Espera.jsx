@@ -17,7 +17,7 @@ export default function Espera() {
 
 
     if (data.resposta == "Circulação encerrada") {
-        return <Typography>Circulação encerrada</Typography>
+        return <Typography color="text.secondary" variant="h6">Circulação encerrada</Typography>
     }
 
 

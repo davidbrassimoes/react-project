@@ -50,7 +50,7 @@ export default function Favoritos() {
             <>
                 {res.map(f => (
                     <Box stop_id={f.stop_id} sx={{ minWidth: 275 }} key={f.stop_id}>
-                        <Card className={f.linha.toLowerCase().substring(1, f.linha.length - 1)} variant="outlined">
+                        <Card className={f.linha.toLowerCase().substring(1, f.linha.length - 1).replace(",", "")} variant="outlined">
                             <React.Fragment>
                                 <Link id={f.stop_id} to={`/${f.stop_id}`}>
                                     <CardContent>

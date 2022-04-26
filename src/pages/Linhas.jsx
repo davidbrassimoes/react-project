@@ -12,7 +12,7 @@ export default function Linhas() {
     }
 
     if (data.resposta == "Circulação encerrada") {
-        return <Typography variant="h5">Circulação encerrada</Typography>
+        return <Typography color="text.secondary" variant="h6">Circulação encerrada</Typography>
     }
 
     if (data) {
